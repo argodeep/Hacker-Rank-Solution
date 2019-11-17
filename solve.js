@@ -1,5 +1,5 @@
 
-// Hacker rank question - https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D%5B%5D=warmup
+// Question Link > Hacker rank question - https://www.hackerrank.com/challenges/sock-merchant/problem
 
 function sockMerchant(n, ar) {
     return n > 1 ? ar.reduce((total, value, index, array) => {
@@ -30,3 +30,5 @@ function sockMerchant(n, ar) {
         }
     }) : 0;
 }
+
+// Question link > Coming soon...
