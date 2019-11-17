@@ -10,7 +10,6 @@ function sockMerchant(n, ar) {
             } else {
                 counterKeyPair[total] = 1;
                 counterKeyPair[value] = 1;
-                console.log(counterKeyPair)
             }
             return counterKeyPair
         };
