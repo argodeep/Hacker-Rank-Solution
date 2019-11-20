@@ -30,4 +30,16 @@ function sockMerchant(n, ar) {
     }) : 0;
 }
 
+// Question link > https://www.hackerrank.com/challenges/js10-function/problem
+
+function factorial(input) {
+   let output = 1;
+   let pointer = input;
+   while(pointer > 0) {
+       output *= pointer;
+       pointer -= 1;
+   }
+   return output;
+}
+
 // Question link > Coming soon...
