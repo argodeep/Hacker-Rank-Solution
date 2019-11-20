@@ -42,4 +42,14 @@ function factorial(input) {
    return output;
 }
 
+// Question link > https://www.hackerrank.com/challenges/arrays-ds/problem
+
+function reverseArray(a) {
+    let newArray = [];
+    a.map((v, i)=> {
+        newArray[a.length - 1 - i] = v
+    });
+    return a.length > 1 ? newArray : [];
+}
+
 // Question link > Coming soon...
