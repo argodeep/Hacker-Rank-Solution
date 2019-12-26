@@ -63,4 +63,25 @@ function printLinkedList(head) {
     }
 }
 
+// Question link > https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem
+
+function insertNodeAtTail(head, data) {
+    if (!head) {
+        head = {
+            data: data,
+            next: null
+        }
+    } else {
+        if (head.next) {
+           insertNodeAtTail(head.next, data)
+        } else {
+           head.next = {
+                data: data,
+                next: null                
+            }
+            return head
+        }
+    }
+    return head
+}
 // Question link > Coming soon...
