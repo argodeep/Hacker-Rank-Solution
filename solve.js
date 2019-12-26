@@ -161,5 +161,24 @@ function deleteNode(head, position) {
     return head
 }
 
+// Question link > https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem
+
+function reversePrint(head) {
+    if (head) {
+        let prev = null;
+        let ref = head;
+        let next = null;
+        while (ref) {
+            next = ref.next;
+            ref.next = prev;
+            prev = ref;
+            ref = next;
+        }
+        head = prev;
+        printLinkedList(head);
+        return head
+    }
+    return
+}
 
 // Question link > Coming soon...
