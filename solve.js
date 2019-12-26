@@ -140,4 +140,26 @@ function insertNodeAtPosition(head, data, position) {
     return head
 }
 
+// Question link > https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem
+
+function deleteNode(head, position) {
+    var pointer = 0;
+    var refNode, prevNode;
+
+    if (position === 0) {
+        head = head.next;
+        return head
+    } else {
+        refNode = head;
+        while (pointer < position) {
+            pointer++;
+            prevNode = refNode;
+            refNode = refNode.next;
+        };
+        prevNode.next = refNode.next;
+    }
+    return head
+}
+
+
 // Question link > Coming soon...
