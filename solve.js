@@ -84,4 +84,23 @@ function insertNodeAtTail(head, data) {
     }
     return head
 }
+
+// Question link > https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+
+function insertNodeAtHead(head, data) {
+  if (!head) {
+      head = {
+          data: data,
+          next: null
+      }
+      return head
+  } 
+  const headBackup = Object.assign({}, head);
+  head = {
+      data: data,
+      next: headBackup
+  }
+  return head
+}
+
 // Question link > Coming soon...
