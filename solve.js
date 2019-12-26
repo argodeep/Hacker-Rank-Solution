@@ -52,4 +52,15 @@ function reverseArray(a) {
     return a.length > 1 ? newArray : [];
 }
 
+// Question link > https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem
+
+function printLinkedList(head) {
+    if (head.data) {
+        console.log(head.data);
+    }
+    if (head.next) {
+        printLinkedList(head.next);
+    }
+}
+
 // Question link > Coming soon...
