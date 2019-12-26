@@ -103,4 +103,41 @@ function insertNodeAtHead(head, data) {
   return head
 }
 
+// Question link > https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem
+
+function insertNodeAtPosition(head, data, position) {
+    var newNode = {
+        data: data,
+        next: null
+    };
+    var pointer = 0;
+    var refNode, prevNode;
+
+    if (!head) {
+        head = {
+            data: data,
+            next: newNode
+        };
+        return head
+    } else {
+        if (head.next) {
+            refNode = head;
+            while (pointer < position) {
+                pointer++;
+                prevNode = refNode;
+                refNode = refNode.next;
+            };
+            prevNode.next = newNode;
+            newNode.next = refNode;
+            return head
+        } else {
+            head.next = {
+                data: data,
+                next: newNode
+            }
+        }
+    }
+    return head
+}
+
 // Question link > Coming soon...
